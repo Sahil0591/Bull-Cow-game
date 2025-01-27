@@ -26,8 +26,13 @@ def main_window():
     labelx = Label(window2, bg="#B6D8FF")
     f = Frame(window2, height=48, width=178, bg="#B6D8FF").place(x=1259, y=561)
 
+    def correction():
+        labelq = Label(window2,text = "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",fg="#BBFFF3", bg="#BBFFF3").place(x=734,y=774)
+
     def err():
         labelq = Label(window2,text = "Please enter a four digit number, which is greater than 999 and less than 10000",bg="#BBFFF3").place(x=734,y=774)
+        num.clear()
+        labelx = Label(window2, text="@@@@", fg="#B6D8FF",bg="#B6D8FF").place(x = 1332, y = 566)
 
     def checking():
         x = 0
@@ -39,6 +44,8 @@ def main_window():
             c2()
         else:
             labelq = Label(window2,text = "Please enter a unique number, where the digits are non-repeating",bg="#BBFFF3").place(x=734,y=774)
+            num.clear()
+            labelx = Label(window2, text="@@@@", fg="#B6D8FF",bg="#B6D8FF").place(x = 1332, y = 566)
 
 
     cbl = []
@@ -52,7 +59,7 @@ def main_window():
         tc = 0
         tb = 0
         count += 1
-        labelx = Label(window2, text="          ",bg="#B6D8FF").place(x = 1332, y = 566)
+        labelx = Label(window2, text="@@@@", fg="#B6D8FF",bg="#B6D8FF").place(x = 1332, y = 566)
             #cond3 is to obtain a unique 4 digit number from the user
         for i in range(0,4):
             
@@ -71,7 +78,7 @@ def main_window():
         s=""
         s = [str(integer) for integer in num]
         a_string = "".join(s)
-        labelx = Label(window2, text=a_string, bg="#B6D8FF").place(x = 1332, y = 566)
+        #labelx = Label(window2, text=a_string, bg="#B6D8FF").place(x = 1332, y = 566)
         res.append(int(a_string))
         cbl.append([tc,tb,res])
         x_c_init = 851
@@ -111,10 +118,15 @@ def main_window():
         
                 
     def typx():
+        labelx = Label(window2, text="@@@@", fg="#B6D8FF",bg="#B6D8FF").place(x = 1332, y = 566)
         s=""
         s = [str(integer) for integer in num]
-        a_string = "".join(s)
-        labelx = Label(window2, text=a_string,bg="#B6D8FF").place(x = 1332, y = 566)
+        if len(s) < 5:
+            a_string = "".join(s)
+            labelx = Label(window2, text=a_string,bg="#B6D8FF").place(x = 1332, y = 566)
+        else: 
+            err()
+            
         
     #def create_window():
     num = []
@@ -139,7 +151,7 @@ def main_window():
         image = img0,
         borderwidth = 0,
         highlightthickness = 0,
-        command = lambda: checking() if len(num)==4 and num[0] != 0 else err(),
+        command = lambda: [correction() ,checking()] if len(num)==4 and num[0] != 0 else err(),
         relief = "flat")
     b0.place(
         x = 1243, y = 617,
