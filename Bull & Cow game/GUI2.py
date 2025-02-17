@@ -81,10 +81,10 @@ def main_window():
         #labelx = Label(window2, text=a_string, bg="#B6D8FF").place(x = 1332, y = 566)
         res.append(int(a_string))
         cbl.append([tc,tb,res])
-        x_c_init = 851
+        x_c_init = 921
         y_c_init = 274
 
-        x_b_init = 909
+        x_b_init = 1069
         y_b_init = 274
 
         x_a_init = 767
@@ -101,13 +101,13 @@ def main_window():
             y_b_init+=40
             count+=1
             labela = Label(window2, text="Number of attempts : {}".format(count-1),bg="#F8F37D").place(x=1200, y=703)
+            #if count == 12:
+               # x_a_init = 975
+               # x_b_init = 1113
+               # x_c_init = 1057
+               # y_a_init,y_b_init,y_c_init = 274,274,274
             if count == 12:
-                x_a_init = 975
-                x_b_init = 1113
-                x_c_init = 1057
-                y_a_init,y_b_init,y_c_init = 274,274,274
-            elif count == 23:
-                labeld = Label(window2,text="You lost, U coundn't figure out the code in 22 tries").place(x=734,y=773)
+                labeld = Label(window2,text="You lost, you coundn't figure out the code in 11 tries",bg="#BBFFF3").place(x=734,y=773)
         #print("Cow = ",tc)
         #print("bull =",tb)
         
