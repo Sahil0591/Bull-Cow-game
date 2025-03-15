@@ -1,6 +1,6 @@
 Bull and Cow - A Number Guessing Game
 
-To run the game you must download the Bull & Cow game folder, make sure you have Python installed on your system and then run the GUI2.py file
+To run the game you must download the Bull & Cow game folder, make sure you have Python installed on your system and then run the GUI.py file
 
 📝 About the Game
 
