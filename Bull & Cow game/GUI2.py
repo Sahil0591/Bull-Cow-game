@@ -108,6 +108,7 @@ def main_window():
                # y_a_init,y_b_init,y_c_init = 274,274,274
             if count == 12:
                 labeld = Label(window2,text="You lost, you coundn't figure out the code in 11 tries",bg="#BBFFF3").place(x=734,y=773)
+                b0.config(state=DISABLED)
         #print("Cow = ",tc)
         #print("bull =",tb)
         
