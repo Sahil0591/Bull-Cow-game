@@ -2,11 +2,13 @@ from tkinter import *
 import GUI2
 buttonstate=False
 def btn_clicked():
-    window.destroy()
-    GUI2.main_window()
+    for widget in window.winfo_children():
+        widget.destroy()
+    GUI2.main_window(window)
 window = Tk()
 window.geometry("1536x864")
 window.configure(bg = "#ffffff")
+
 canvas = Canvas(
     window,
     bg = "#ffffff",
@@ -16,11 +18,11 @@ canvas = Canvas(
     highlightthickness = 0,
     relief = "ridge")
 canvas.place(x = 0, y = 0)
-background_img = PhotoImage(file = f"background.png")
+background_img = PhotoImage(file = f"Bull & Cow game/images/background.png")
 background = canvas.create_image(
     768.0, 432.0,
     image=background_img)
-img0 = PhotoImage(file = f"img0.png")
+img0 = PhotoImage(file = f"Bull & Cow game/images/img0.png")
 b = Button(
     image = img0,
     borderwidth = 0,
