@@ -1,8 +1,8 @@
-#Bull and Cow - A Number Guessing Game
+# Bull and Cow - A Number Guessing Game
 
 To run the game you must download the Bull & Cow game folder, make sure you have Python installed on your system and then run the GUI.py file
 
-##📝 About the Game
+## 📝 About the Game
 
 Bull and Cow is a number-guessing game implemented using Python's tkinter library for a graphical user interface (GUI). The game generates a random four-digit number with non-repeating digits, and the player must guess it within 11 attempts.
 
@@ -16,7 +16,7 @@ The game ends when the player guesses the number correctly (4 Bulls) or exhausts
 
 The Submit button is disabled after 11 attempts to prevent further guesses.
 
-##🎮 How to Play
+## 🎮 How to Play
 
 Click on the number buttons to enter a four-digit guess (digits must be unique).
 
@@ -32,7 +32,7 @@ You reach 11 attempts (Lose ❌)
 
 If you lose, the game disables further inputs.
 
-##🚀 Features
+## 🚀 Features
 
 Game built only using Python
 
