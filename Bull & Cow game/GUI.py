@@ -18,11 +18,11 @@ canvas = Canvas(
     highlightthickness = 0,
     relief = "ridge")
 canvas.place(x = 0, y = 0)
-background_img = PhotoImage(file = f"Bull & Cow game/images/background.png")
+background_img = PhotoImage(file = f"images/background.png")
 background = canvas.create_image(
     768.0, 432.0,
     image=background_img)
-img0 = PhotoImage(file = f"Bull & Cow game/images/img0.png")
+img0 = PhotoImage(file = f"images/img0.png")
 b = Button(
     image = img0,
     borderwidth = 0,

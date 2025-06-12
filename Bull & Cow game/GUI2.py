@@ -136,13 +136,13 @@ def main_window(window):
     # Store images in the window object to prevent garbage collection
     window.images = {}
 
-    window.images['background'] = PhotoImage(file=f"Bull & Cow game/images/background1.png")
+    window.images['background'] = PhotoImage(file=f"images/background1.png")
     background_img = window.images['background']
     background = canvas2.create_image(
         702.0, 523.5,
         image=background_img)
 
-    window.images['submit'] = PhotoImage(file=f"Bull & Cow game/images/submit.png")
+    window.images['submit'] = PhotoImage(file=f"images/submit.png")
     img0 = window.images['submit']
     b0 = Button(
         image=img0,
@@ -155,7 +155,7 @@ def main_window(window):
         width=211,
         height=65)
 
-    window.images['img1'] = PhotoImage(file=f"Bull & Cow game/images/img1.png")
+    window.images['img1'] = PhotoImage(file=f"images/img1.png")
     img1 = window.images['img1']
     b1 = Button(
         image=img1,
@@ -168,7 +168,7 @@ def main_window(window):
         width=75,
         height=60)
 
-    window.images['img2'] = PhotoImage(file=f"Bull & Cow game/images/img11.png")
+    window.images['img2'] = PhotoImage(file=f"images/img11.png")
     img2 = window.images['img2']
     b2 = Button(
         image=img2,
@@ -180,7 +180,7 @@ def main_window(window):
         x=1397, y=471,
         width=75,
         height=60)
-    window.images['img3'] = PhotoImage(file=f"Bull & Cow game/images/img2.png")
+    window.images['img3'] = PhotoImage(file=f"images/img2.png")
     img3 = window.images['img3']
     b3 = Button(
         image = img3,
@@ -192,7 +192,7 @@ def main_window(window):
         x = 1225, y = 245,
         width = 75,
         height = 60)
-    window.images['img4'] = PhotoImage(file=f"Bull & Cow game/images/img3.png")
+    window.images['img4'] = PhotoImage(file=f"images/img3.png")
     img4 = window.images['img4']
     b4 = Button(
         image = img4,
@@ -204,7 +204,7 @@ def main_window(window):
         x = 1311, y = 245,
         width = 75,
         height = 60)
-    window.images['img5'] = PhotoImage(file=f"Bull & Cow game/images/img4.png")
+    window.images['img5'] = PhotoImage(file=f"images/img4.png")
     img5 = window.images['img5']
     b5 = Button(
         image = img5,
@@ -216,7 +216,7 @@ def main_window(window):
         x = 1397, y = 245,
         width = 75,
         height = 60)
-    window.images['img6'] = PhotoImage(file=f"Bull & Cow game/images/img5.png")
+    window.images['img6'] = PhotoImage(file=f"images/img5.png")
     img6 = window.images['img6']
     b6 = Button(
         image = img6,
@@ -228,7 +228,7 @@ def main_window(window):
         x = 1225, y = 320,
         width = 75,
         height = 60)
-    window.images['img7'] = PhotoImage(file=f"Bull & Cow game/images/img6.png")
+    window.images['img7'] = PhotoImage(file=f"images/img6.png")
     img7 = window.images['img7']
     b7 = Button(
         image = img7,
@@ -240,7 +240,7 @@ def main_window(window):
         x = 1311, y = 320,
         width = 75,
         height = 60)
-    window.images['img8'] = PhotoImage(file=f"Bull & Cow game/images/img7.png")
+    window.images['img8'] = PhotoImage(file=f"images/img7.png")
     img8 = window.images['img8']
     b8 = Button(
         image = img8,
@@ -252,7 +252,7 @@ def main_window(window):
         x = 1397, y = 320,
         width = 75,
         height = 60)
-    window.images['img9'] = PhotoImage(file=f"Bull & Cow game/images/img8.png")
+    window.images['img9'] = PhotoImage(file=f"images/img8.png")
     img9 = window.images['img9']
     b9 = Button(
         image = img9,
@@ -264,7 +264,7 @@ def main_window(window):
         x = 1225, y = 395,
         width = 75,
         height = 60)
-    window.images['img10'] = PhotoImage(file=f"Bull & Cow game/images/img9.png")
+    window.images['img10'] = PhotoImage(file=f"images/img9.png")
     img10 = window.images['img10']
     b10 = Button(
         image = img10,
@@ -276,7 +276,7 @@ def main_window(window):
         x = 1311, y = 395,
         width = 75,
         height = 60)
-    window.images['img11'] = PhotoImage(file=f"Bull & Cow game/images/img10.png")
+    window.images['img11'] = PhotoImage(file=f"images/img10.png")
     img11 = window.images['img11']
     b11 = Button(
         image = img11,

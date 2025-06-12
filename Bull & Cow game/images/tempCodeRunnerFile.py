@@ -1,1 +1,0 @@
-window.geometry("1536x864")
